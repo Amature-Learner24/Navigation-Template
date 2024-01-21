@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: -90px;
+    left: -130px;
+
+}
+
+.navbar{
+    border-top: 5px solid black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: grey;
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+}
+
+li{
+    display: inline-block;
+    padding: 20px;
+}
+
+a{
+    color: black;
+}
+
+.menu{
+    position: absolute;
+    right: 10px;
+    justify-content: space-between;
+
+}
+
+.container{
+    border: 2px solid black;
+    height: 100px;
+    width: 300px;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+}
