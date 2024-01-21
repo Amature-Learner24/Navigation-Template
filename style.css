@@ -2,19 +2,22 @@
   box-sizing: border-box;
 }
 
-html{
-
-}
 
 body{
-  background-color: bisque;
+  background-color: whitesmoke;
   margin: 0;
 }
+h1{
+  display: inline;
+  background-color:blanchedalmond;
+}
 
+nav{
+  float: right;
+}
 .main-header-logo
 {
-  background-color: black;
-  text-align: center;
+  text-align: Left;
   color: rgba(207, 142, 51, 0.956);
   font-weight: bold;
   font-size: 40px;
@@ -41,6 +44,7 @@ body{
 .main-header a{
   color: black;
   padding: 14px 16px;
+  text-align: center;
 }
 
 .main-header a:hover{
@@ -53,4 +57,7 @@ body{
   color: white;
 }
 
+footer{
+  display: block;
+}
 
