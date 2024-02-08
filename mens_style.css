@@ -5,12 +5,9 @@
     box-sizing: border-box;
 }
 
-/* Container Styles */
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
+/* Section Styles */
+section {
+    min-height: 100vh;
 }
 
 /* Navigation Styles */
@@ -25,23 +22,23 @@
     padding: 20px;
 }
 
-.navbar-logo img{
+.navbar-logo img {
     display: flex;
     height: 10vh;
 }
 
-.navbar-list{
+.navbar-list {
     display: flex;
 }
 
-.navbar-list li{
+.navbar-list li {
     color: black;
     display: flex;
     font-weight: bold;
     padding: 20px;
 }
 
-ul a{
+ul a {
     text-decoration: none;
     display: flex;
 }
@@ -54,21 +51,21 @@ li:hover {
 }
 
 /* Search Bar Styles */
-.search-bar{
+.search-bar {
     float: right;
     display: flex;
     padding: 16px;
 }
 
-.search-bar input{
+.search-bar input {
     height: 6vh;
     width: 30vw;
-    border-radius: 5px ;
+    border-radius: 5px;
     border: 2px solid black;
     text-align: center;
 }
 
-.search-bar button{
+.search-bar button {
     position: absolute;
     height: 6vh;
     padding: 5px 10px;
@@ -79,88 +76,75 @@ li:hover {
 }
 
 /* Main Content Styles */
-.wrapper{
-    margin-top: 92px;
-    display: flex;  
-    flex-direction: column;
-    justify-content: flex-start; 
-    overflow: hidden;
-}
-
-.wrapper img{
-    height: 42vh;
-    width: 100vw;
-    display: block;
-}
-
-.shortcut-menulist{
+.mens-fashion {
     display: flex;
-    justify-content: space-between;
+    padding-top: 100px;
 }
 
-.shortcut-menulist img{
-    border-radius: 50%;
-    height: 25vh;
+.men-products {
+    margin: 10px;
     padding: 10px;
-    overflow: auto;
-    cursor: pointer;
+    text-align: center;
 }
 
-.shortcut-explore{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.men-products img {
+    max-width: 100%;
+    padding: 50px 0;
 }
 
-.shortcut-explore img{
-    margin-left: 5px;
-    padding: 10px;
+h2 {
+    font-size: medium;
+}
+
+.men-products p {
+    font-weight: lighter;
+}
+
+.men-products button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 /* Footer Styles */
-footer{
+footer {
     position: sticky;
     background-color: grey;
     text-align: center;
     padding: 10px;
-  }
+}
 
 /* Media Queries for Responsive Design */
 /* Small screens, such as mobile */
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 680px) {
+
     /* Global Styles */
-    body{
+    body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    /* Container Styles */
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100vw;
-    }
-    
-    /* Navigation Styles */
-    .navbar-logo img{
+    /* Navigation Styles */ 
+    .navbar-logo img {
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 5px;
         left: 50%;
+        height: 3.5em;
         transform: translateX(-50%);
     }
 
-    .navbar-list li
-    {
+    .navbar-list li {
         display: none;
     }
 
     /* Search Bar Styles */
-    .search-bar{
+    .search-bar {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -168,35 +152,41 @@ footer{
         left: 130px;
         height: 3.5em;
         transform: translateY(-50%);
+        margin-top: 2px;
+
     }
 
-    .search-bar button{
-        position: fixed;
+    .search-bar button {
         height: 1.8em;
         transform: translateX(-50%);
     }
-    
-    /* Main Content Styles */
-    .shortcut-menulist img{
-        display: flex;
-        flex-direction: row;
-        height: 16vh;
-        width: 200vw;
-        overflow: scroll;
+
+     /* Section Styles */
+     section {
+        min-height: 100vh;
     }
 
-    .shortcut-explore img{
+    /* Main Content Styles */
+    .mens-fashion {
         display: flex;
-        flex-direction: row;
-        overflow: scroll;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+    .men-products p {
+        font-size: small;
+    }
+
+    .men-products button {
+        width: 80vw;
     }
 
     /* Footer Styles */
     footer{
-        position: fixed;
-        bottom: 0;
         width: 100vw;
     }
-
-  }
-  
+}

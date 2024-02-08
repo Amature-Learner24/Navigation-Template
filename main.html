@@ -3,28 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <!-- Page Title: Online Shopping Store | Adorn with Website Icon -->
     <title>Online Shopping Store | Adorn</title>
     <link rel="title icon" type="image/png" href="Images/Cute-Fox-icon.png" />
+    <!-- Add CSS link -->
     <link rel="stylesheet" href="main_style.css" />
+    <!-- Add Font awesome icon link -->
     <script
       src="https://kit.fontawesome.com/6ae117f744.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="navbar">
-      <a href="#" class="navbar-logo">
-        <img src="Images/Logo.png" alt="adorn.com" />
-      </a>
-      <ul>
-        <a href="men-clothes.html" target="_blank"><li>MEN</li></a>
-        <a href=""><li>WOMEN</li></a>
-        <a href=""><li>KIDS</li></a>
-        <a href=""><li>BEAUTY</li></a>
-      </ul>
-      <form class="search">
-        <input type="text" placeholder="Search..." name="search1" />
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
+    <header>
+      <!-- Navigation Menu with Search Bar-->
+      <nav class="navbar">
+        <!-- Website Logo-->
+        <div class="navbar-logo">
+          <a href="#"><img src="Images/Logo.png" alt="adorn.com" /></a>
+        </div>
+        <ul class="navbar-list">
+          <a href="main.html"><li>HOME</li></a>
+          <a href="men-clothes.html" target="_blank"><li>MEN</li></a>
+          <a href=""><li>WOMEN</li></a>
+          <a href=""><li>KIDS</li></a>
+          <a href=""><li>BEAUTY</li></a>
+        </ul>
+        <!-- Search Bar-->
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." name="search1" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Container for Product Listings -->
+    <div class="container">
+      <div class="wrapper">
+        <img src="Images/body top.jpg" alt="bodytop" />
+      </div>
+
+      <!-- Shortcut Menu List -->
+      <div class="shortcut-menulist">
+        <img src="Images/sc men.jpg" alt="bodytop" />
+        <img src="Images/sc women.jpg" alt="bodytop" />
+        <img src="Images/sc kids.jpg" alt="bodytop" />
+        <img src="Images/sc men.jpg" alt="bodytop" />
+        <img src="Images/sc women.jpg" alt="bodytop" />
+        <img src="Images/sc kids.jpg" alt="bodytop" />
+        <img src="Images/sc men.jpg" alt="bodytop" />
+      </div>
+
+      <!-- Shortcut Explore List -->
+      <div class="shortcut-explore">
+        <img src="Images/sc men.jpg" alt="bodytop" />
+        <img src="Images/sc women.jpg" alt="bodytop" />
+        <img src="Images/sc kids.jpg" alt="bodytop" />
+      </div>
+
+      <!-- Footer Section: Copyright -->
+      <footer>
+        <p>&COPY; 2024 Adorn Fashion Limited. All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
